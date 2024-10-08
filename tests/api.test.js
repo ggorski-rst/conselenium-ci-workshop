@@ -47,7 +47,6 @@ describe("API tests", () => {
   it("Authorize user", async () => {
     const response = await spec()
       .post(`${baseUrl}/Account/v1/Authorized`)
-
       .withBody({
         userName: user,
         password: password,
@@ -68,7 +67,6 @@ describe("API tests", () => {
     const response = await spec()
       .post(`${baseUrl}/BookStore/v1/Books`)
       .withBearerToken(token)
-
       .withBody({
         userId: userId,
         collectionOfIsbns: [
