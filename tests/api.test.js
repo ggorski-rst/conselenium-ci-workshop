@@ -110,5 +110,6 @@ describe("API tests", () => {
       }).password;
     expect(response.statusCode).is.eql(204);
     expect(response.body.books).is.eql(undefined);
+    console.log(Date.now());
   });
 });
